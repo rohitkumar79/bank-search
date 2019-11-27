@@ -1,12 +1,12 @@
-<div class="row" style="margin: 10px;">
+<div class="">
     <div class="row col-sm-12 flex-center">
         <h3>
             Bank Search
         </h3>
     </div>
-    <div class="row col-sm-12 flex-center" style="margin-top: 10px;">
-        <div class="col-sm-5 flex-center">
-            <div class="col-sm-8">
+    <div class="col-sm-12 col-xs-12 col-md-12" style="margin-top: 10px;">
+        <div class="col-sm-5 col-md-5 col-xs-12 flex-center pad-top-mb">
+            <div class="col-sm-8 col-md-8 col-xs-8" style="padding-left: 0px;">
                 <div class="group">
                     <select id="selectBank" class="form-control" name="selectBank" ng-model="data.bankSelected"
                         ng-options="bank as bank.name for bank in data.bankOptions"
@@ -15,27 +15,27 @@
                     </select>
                 </div>
             </div>
-            <div class="col-sm-4" style="padding-left: 0px;">
+            <div class="col-sm-4 col-md-4 col-xs-4" style="padding-left: 0px;">
                 <span class="fa fa-star" ng-if="data.bankSelected && data.bankSelected.favourite"
                     ng-click="markFavourite(data.bankSelected, false)"> Favourite</span>
                 <span class="fa fa-star-o" ng-if="data.bankSelected && !data.bankSelected.favourite"
                     ng-click="markFavourite(data.bankSelected, true)"> Mark Favourite</span>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-md-4 col-xs-12  pad-top-mb">
             <div class="group">
                 <input type="text" name='searchText' ng-change="pageChanged()" ng-model='data.searchText' placeholder="Search through results"
                     style="width:
                     100%;" />
             </div>
         </div>
-        <div class="col-sm-3 flex-center">
-            <div class="col-sm-8" style="text-align: right;">
+        <div class="col-sm-3 col-md-3 col-xs-12 pad-top-mb flex-center" style="padding-left: 0px;">
+            <div class="col-sm-8 col-xs-6 col-md-8" style="text-align: right;">
                 <label>
                     Results per Page
                 </label>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-xs-6 col-md-4">
                 <div class="group">
                     <select id="selectPage" class="form-control" name="selectPage" ng-model="data.itemsPerPage"
                         ng-options="page for page in data.pageOptions" ng-change="pageChanged()">

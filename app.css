@@ -46,3 +46,10 @@ h3 {
   color: #337ab7;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 480px) {
+  .pad-top-mb {
+    padding-top: 10px;
+    text-align: left;
+  }
+}
